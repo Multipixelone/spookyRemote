@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # Made by Multipixelone
 # Main Script
-import pyglet
+from os import system
 
-music = pyglet.resource.media('testuncom.wav')
-music.play()
-
-pyglet.app.run()
+system('mpg321 test.mp3 &')
