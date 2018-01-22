@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 # Made by Multipixelone
 # Main Script
-from playsound import playsound
+import pygame
 
-playsound('~/spookyRemote/Sounds/test.wav')
+pygame.mixer.init()
+pygame.mixer.music.load("Sounds/myFile.wav")
+pygame.mixer.music.play()
+# while pygame.mixer.music.get_busy() == True:
+#   continue
