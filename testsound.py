@@ -1,10 +1,9 @@
 #!/usr/bin/env python
 # Made by Multipixelone
 # Main Script
-import pygame
+import pyglet
 
-pygame.mixer.init()
-pygame.mixer.music.load("Sounds/myFile.wav")
-pygame.mixer.music.play()
-# while pygame.mixer.music.get_busy() == True:
-#   continue
+music = pyglet.resource.media('Sounds/test.wav')
+music.play()
+
+pyglet.app.run()
