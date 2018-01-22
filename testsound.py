@@ -3,7 +3,7 @@
 # Main Script
 import pyglet
 
-music = pyglet.resource.media('test.wav')
+music = pyglet.resource.media('testuncom.wav')
 music.play()
 
 pyglet.app.run()
